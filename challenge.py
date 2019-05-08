@@ -6,19 +6,19 @@ class Account:
     def __str__(self):
         return f'Account owner:   {self.owner}\nAccount balance: ${self.balance}'
 
-    def deposit(self, dep_amt):
-        self.balance += dep_amt
+    def deposit(self, deposit_amt):
+        self.balance += deposit_amt
         print('Deposit Accepted')
 
-    def withdraw(self, wd_amt):
-        if self.balance >= wd_amt:
-            self.balance -= wd_amt
+    def withdraw(self, wd_amount):
+        if self.balance >= wd_amount:
+            self.balance -= wd_amount
             print('Withdrawal Accepted')
         else:
             print('Sorry, Funds Unavailable!')
 
 # 1. Instantiate the class
-acct1 = Account('Jose',100)
+acct1 = Account('Celine',100)
 print(acct1)
 
 # 3. Show the account owner attribute
